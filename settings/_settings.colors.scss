@@ -1,0 +1,37 @@
+/**
+ * Colors
+ */
+
+$color-brand: #011eff;
+$color-brand-highlight: lighten($color-brand, 15%);
+$color-brand-shadow:     darken($color-brand, 15%);
+
+
+/**
+ * Greyscale
+ */
+
+$color-black: #2a2a2a; // rgb(42, 42, 42)
+$color-grey-darkest: #3d3d3d; // rgb(61, 61, 61)
+$color-grey-darker: #525252; // rgb(82, 82, 82)
+$color-grey-dark: #666; // rgb(102, 102, 102)
+$color-grey: #7a7a7a; // rgb(122, 122, 122)
+$color-grey-light: #a4a4a4; // rgb(164, 164, 164)
+$color-grey-lighter: #ccc; // rgb(204, 204, 204)
+$color-grey-lightest: #f4f4f4; // rgb(244, 244, 244)
+$color-white: #fff; // rgb(255, 255, 255)
+
+
+// UI
+$color-ui:          $color-grey-light;
+
+// Text
+$color-text:        $color-grey-dark;
+
+// Links
+$color-link:        $color-brand;
+$color-link-hover:  $color-brand-shadow;
+
+// Buttons
+$color-btn:         $color-brand;
+$color-btn-hover:   $color-brand-shadow;
