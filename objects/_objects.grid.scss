@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    #GRID
+\*------------------------------------*/
+
+.o-col {
+  float: left;
+}
+.o-col--3 {
+  width: calc(33.33% - 32px);
+}
+
+.o-col:first-child {
+  width: 33.3333%;
+  margin-right: 36px;
+}
+
+.o-col--3:nth-child(3n) {
+    margin-right: 0
+}
+
+.o-col--3:last-child {
+    text-align: right;
+}
+
+.o-col--2 {
+    width: calc(50% - 24px);
+    margin: 0 48px 0px 0;
+}
+
+.o-col--2:nth-child(2n) {
+    margin-right: 0
+}
+
+@include breakpoint(sm) {
+    .o-col--2 {
+        width: 100%;
+        margin: 0
+    }
+    .o-col--2:last-child {
+        margin-bottom: 0
+    }
+}
+
+@include breakpoint(sm) {
+    .o-col--3 {
+        width: calc(100%);
+        margin: 0 0px 20px 0;
+    }
+
+    .o-col--3:last-child {
+        margin-bottom: 0;
+        text-align: left !important;
+    }
+}
